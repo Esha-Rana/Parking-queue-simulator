@@ -1,6 +1,5 @@
 import tkinter as tk
-from Logic import park_car, remove_car, get_parking_status
-
+from Logic import park_car, remove_car, remove_specific, get_parking_status
 root = tk.Tk()
 root.title("Parking Lot Simulator")
 root.geometry("600x550")
@@ -273,7 +272,7 @@ def park():
     entry_park.delete(0, tk.END)
     animate_park(car, target_slot)
 
-def remove_specific():
+def remove_specific_gui():
     """Handle remove specific car button"""
     if animating:
         return
@@ -298,7 +297,7 @@ def remove_specific():
     entry_remove.delete(0, tk.END)
     
     def complete_removal():
-        msg = remove_car(car)
+        msg = remove_specific(car)
         status_label.config(text=msg)
     
     animate_remove(car, from_slot, complete_removal)
@@ -339,9 +338,11 @@ def remove_first():
 
 # Connect button commands
 btn_park.config(command=park)
-btn_remove_specific.config(command=remove_specific)
+btn_remove_specific.config(command=remove_specific_gui)
 btn_remove_first.config(command=remove_first)
 
 draw_parking_lot()
 root.mainloop()
-///////
+
+
+

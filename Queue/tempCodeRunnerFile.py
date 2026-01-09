@@ -1,1 +1,1 @@
-canvas.pack(pady=10)
+msg
