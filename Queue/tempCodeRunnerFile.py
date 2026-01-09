@@ -1,0 +1,1 @@
+canvas.pack(pady=10)
