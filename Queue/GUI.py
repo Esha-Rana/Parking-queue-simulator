@@ -344,3 +344,4 @@ btn_remove_first.config(command=remove_first)
 
 draw_parking_lot()
 root.mainloop()
+///////
