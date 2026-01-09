@@ -1,9 +1,11 @@
 # Parking Queue Simulator - Mini Project Report
 
-Course: Data Structure and Algorithms (COMP 202)
-Assignment 1
+## Course: Data Structure and Algorithms (COMP 202),
+## Assignment 1
 
 This project is a parking management simulator that demonstrates the use of Data Structures and Algorithms (DSA) concepts, specifically the circular queue. The simulator allows users to park cars, remove cars, and view the current state of parking slots using a GUI interface with Tkinter. The program ensures efficient utilization of parking space by reusing slots freed by departing cars.
+
+---
 
 # Objective:
 
@@ -11,6 +13,8 @@ This project is a parking management simulator that demonstrates the use of Data
 - To demonstrate the functionality of a circular queue for efficient memory usage.
 - To provide an interactive and visual representation of queue operations using a GUI.
 - To strengthen understanding of queue operations like enqueue, dequeue, and display.
+
+---
 
 # Data Structure: 
 Circular Queue (implemented using a fixed-size array)
@@ -29,30 +33,34 @@ Circular Queue (implemented using a fixed-size array)
 - Sufficient for 2D visualization needs
 - Easier setup for college environment
 
+---
+
 # Algorithm/ working mechanism:
 
-Algorithm for Park Car (Enqueue):
+## Algorithm for Park Car (Enqueue):
 
-a. Check if the queue is full: (rear + 1) % MAX_SIZE == front.
+- Check if the queue is full: (rear + 1) % MAX_SIZE == front.
 If full, display “Parking is full”.
-b. If the queue is empty (front == -1), set front = 0 and rear = 0.
-c. Otherwise, move rear to next position using (rear + 1) % MAX_SIZE.
-d. Add the car number at parking[rear].
-e. Display success message.
+- If the queue is empty (front == -1), set front = 0 and rear = 0.
+- Otherwise, move rear to next position using (rear + 1) % MAX_SIZE.
+- Add the car number at parking[rear].
+- Display success message.
 
-Algorithm for Remove Car (Dequeue):
+## Algorithm for Remove Car (Dequeue):
 
-a. Check if the queue is empty (front == -1).
+- Check if the queue is empty (front == -1).
 If empty, display “Parking is empty”.
-b. Remove the car at parking[front].
-c. If the removed car was the only car (front == rear), reset front = rear = -1.
-d. Otherwise, move front to (front + 1) % MAX_SIZE.
-e. Display removal success message.
+- Remove the car at parking[front].
+- If the removed car was the only car (front == rear), reset front = rear = -1.
+- Otherwise, move front to (front + 1) % MAX_SIZE.
+- Display removal success message.
 
-Algorithm for Display Parking Slots:
+## Algorithm for Display Parking Slots:
 
-a. If the queue is empty (front == -1), display “Parking is empty”.
-b. Otherwise, iterate through the parking array and show the car numbers in each slot.
+- If the queue is empty (front == -1), display “Parking is empty”.
+- Otherwise, iterate through the parking array and show the car numbers in each slot.
+
+---
 
 # Basic Time Complexity Analysis:
 
@@ -60,6 +68,8 @@ Operation	               Time Complexity	                      Reason
 Park Car (Enqueue)	            O(1)	           Direct index assignment and pointer update
 Remove Car (Dequeue)          	O(1)	           Direct index removal and pointer update
 Display Parking	                O(n)	           Iterates through all parking slots (MAX_SIZE = n)
+
+---
 
 # Future improvements
 # References
