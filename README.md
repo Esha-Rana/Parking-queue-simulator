@@ -74,7 +74,10 @@ Display Parking	                O(n)	           Iterates through all parking slo
 # Future improvements
 # References
 ....left to write more ..functions ko gui ko hola 
-- learnt GUI from- https://www.youtube.com/watch?si=UCzMjn9mq-gtI54V&v=mop6g-c5HEY&feature=youtu.be- 
+- learnt GUI from- https://www.youtube.com/watch?si=UCzMjn9mq-gtI54V&v=mop6g-c5HEY&feature=youtu.be-
+- https://youtu.be/rUUrmGKYwHw?si=XGYRMcjNEgUM6P7m
+- https://youtu.be/pWnH4Q3eMKI?si=L0ObHEjtil400N48
+- https://youtu.be/ibf5cx221hk?si=KpzwJYVGbQ8F7NBE
 - take screenshot from img for tkinter short notes
 - add screenshot from GUI
 - Queue data structure theory: Course lecture notes COMP202
