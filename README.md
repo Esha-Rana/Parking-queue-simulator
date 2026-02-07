@@ -189,36 +189,36 @@ Animation Parameters:
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                    USER INTERACTION                      │
+│                    USER INTERACTION                     │
 │  (Manual Input / Auto Simulation / GUI Controls)        │
 └────────────────────┬────────────────────────────────────┘
                      ↓
 ┌─────────────────────────────────────────────────────────┐
-│               INPUT VALIDATION LAYER                     │
+│               INPUT VALIDATION LAYER                    │
 │  • Check empty input                                    │
-│  • Normalize car number (uppercase, trim)              │
-│  • Verify not already parked (Hash Set O(1) lookup)   │
+│  • Normalize car number (uppercase, trim)               │
+│  • Verify not already parked (Hash Set O(1) lookup)     │
 └────────────────────┬────────────────────────────────────┘
                      ↓
 ┌─────────────────────────────────────────────────────────┐
-│               QUEUE OPERATION LAYER                      │
-│  Park: Find next empty slot (Linear search O(n))       │
-│  Remove: Get first occupied slot (Linear search O(n))  │
+│               QUEUE OPERATION LAYER                     │
+│  Park: Find next empty slot (Linear search O(n))        │
+│  Remove: Get first occupied slot (Linear search O(n))   │
 └────────────────────┬────────────────────────────────────┘
                      ↓
 ┌─────────────────────────────────────────────────────────┐
-│               ANIMATION LAYER                            │
+│               ANIMATION LAYER                           │
 │  • Calculate trajectory coordinates                     │
-│  • Multi-phase interpolation                           │
-│  • Frame-by-frame rendering (20ms intervals)           │
+│  • Multi-phase interpolation                            │
+│  • Frame-by-frame rendering (20ms intervals)            │
 └────────────────────┬────────────────────────────────────┘
                      ↓
 ┌─────────────────────────────────────────────────────────┐
-│               VISUAL RENDERING                           │
+│               VISUAL RENDERING                          │
 │  • Clear canvas                                         │
-│  • Redraw all parking slots                            │
-│  • Render animated car                                 │
-│  • Update status display                               │
+│  • Redraw all parking slots                             │
+│  • Render animated car                                  │
+│  • Update status display                                │
 └─────────────────────────────────────────────────────────┘
 ```
 
