@@ -2,15 +2,21 @@
 ---
 
 **Course:**  Data Structure and Algorithms (COMP 202)
+
 **Assignment:** 1
+
 **Group members:**
 - Esha Rana (14)
 - Ananya Tripathi (36)
+
 **Programming Language:** Python 
+
 ---
 
 ## Project Description 
+
 This project is a parking management simulator that demonstrates the use of Data Structures and Algorithms (DSA) concepts, specifically the circular queue. The simulator allows users to park cars, remove cars, and view the current state of parking slots using a GUI interface with Tkinter. The program ensures efficient utilization of parking space by reusing slots freed by departing cars.
+
 ---
 
 ## Objective:
@@ -21,6 +27,7 @@ This project is a parking management simulator that demonstrates the use of Data
 4. Supports both manual and automatic simulation modes
 5. Demonstrates efficient space management and queue operations
 6. Offers real-time status updates and animations
+
 ---
 
 ### Project Structure
@@ -38,7 +45,7 @@ parking-queue-simulator/
 
 # Acknowledgments
 
-- **Course Instructors**: Mr. Bipesh Subedi - For guidance on data structures and algorithms
+- **Course Instructor**: Mr. Bipesh Subedi - For guidance on data structures and algorithms
 - **Python Documentation**: For Tkinter references
 - **Stack Overflow Community**: For troubleshooting support
 - **GitHub**: For version control and collaboration
@@ -176,7 +183,9 @@ Animation Parameters:
   - Total duration: ~1.5 seconds per car
 ```
 
-### Complete Workflow
+---
+
+## Complete Workflow
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -213,7 +222,9 @@ Animation Parameters:
 └─────────────────────────────────────────────────────────┘
 ```
 
-### Implementation Details
+---
+
+## Implementation Details
 
 ```
 Array-based structure:
@@ -293,9 +304,10 @@ Array-based structure:
 
 ##  Sample Input & Output
 ADD...........screenshots
+
 ---
 
-**Contributions by Team Members:**
+# **Contributions by Team Members:**
 
 **Initial Developer (Esha):**
 -  Project initialization and structure
@@ -317,9 +329,9 @@ ADD...........screenshots
 # References
 
 - learnt GUI from- https://www.youtube.com/watch?si=UCzMjn9mq-gtI54V&v=mop6g-c5HEY&feature=youtu.be-
-- https://youtu.be/rUUrmGKYwHw?si=XGYRMcjNEgUM6P7m
-- https://youtu.be/pWnH4Q3eMKI?si=L0ObHEjtil400N48
-- https://youtu.be/ibf5cx221hk?si=KpzwJYVGbQ8F7NBE
+- Queue in python- https://youtu.be/rUUrmGKYwHw?si=XGYRMcjNEgUM6P7m
+- Queue Implementation Using List- https://youtu.be/pWnH4Q3eMKI?si=L0ObHEjtil400N48
+- Tkinter- https://youtu.be/ibf5cx221hk?si=KpzwJYVGbQ8F7NBE
 - Queue data structure theory: Course lecture notes COMP202
 
 ----
