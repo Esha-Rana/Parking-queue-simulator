@@ -303,7 +303,7 @@ Array-based structure:
 ---
 
 ##  Sample Input & Output
-ADD...........screenshots
+![Demo](GUI.png)
 
 ---
 
